@@ -35,7 +35,7 @@ app.get("/post/:id", async (req, res) => {
                 break;
             }
         }
-        if(!isFind) res.send(null);
+        if(!isFind) res.send("Invalid post id");
     }
     catch(err){
         console.log(err);
